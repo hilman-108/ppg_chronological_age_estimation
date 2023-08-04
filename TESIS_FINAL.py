@@ -237,7 +237,7 @@ def analisis(aa, ba, ca, da, ea, ai, bi, ci, di, ei, S, D, Sa, Da, PPG_Signal):
     f88, f89, f90 = len(PPG_Signal[0]), len(PPG_Signal[1]), len(PPG_Signal[2])  # AT(Area Time)
     return (f4, f5, f6, f61, f62, f63, f70, f71, f72)
 
-with open('Model_Semua_Usia_Percobaan', "rb") as file:
+with open('Model_Semua_Usia', "rb") as file:
     svm_model = pickle.load(file)
 
 class Ui_MainWindow(object):
