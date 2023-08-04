@@ -40,6 +40,7 @@ def filter_butter(sinyal):
     hasil = signal.filtfilt(b, a, sinyal)
     return (hasil)
 
+########################## from https://etd.repository.ugm.ac.id/penelitian/detail/190044 ###############################
 def normalisasi_z (ppg): # Fungsi untuk normalisasi standar deviasi
     mean = np.mean(ppg)
     std = np. std (ppg)
@@ -51,6 +52,7 @@ def normalisasi_max(fil): # Fungsi untuk normalisasi min−max
     mins = min( fil )
     fil = [((i-mins)/(maks-mins)) for i in fil]
     return( fil )
+#########################################################################################################################
 
 def auc(sinyal, B_kiri, B_kanan):
     sig = sinyal[B_kiri:B_kanan]
